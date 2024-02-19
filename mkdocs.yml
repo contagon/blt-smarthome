@@ -1,0 +1,40 @@
+site_name: BLT Smarthome
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - toc.integrate 
+    - navigation.instant
+    - navigation.sections
+  icon:
+    repo: fontawesome/solid/bacon
+    favicon: fontawesome/solid/bacon
+    logo: fontawesome/solid/bacon
+
+repo_url: https://github.com/contagon/blt-smarthome
+
+watch:
+  - gen_pages.py
+  - devices
+
+plugins: 
+  - search
+  - gen-files:
+      scripts:
+        - gen_pages.py
+
+nav:
+  - Introduction: 
+    - index.md
+    - protocols.md
+  - Devices:
+    - temperature.md
+    
+# Table setup
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - assets/javascript/tablesort.js
+
+markdown_extensions:
+  - tables
+  - attr_list

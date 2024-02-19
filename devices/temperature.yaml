@@ -1,0 +1,20 @@
+title: Temperature Sensor
+description: Temperature sensors are extremely common sensors used for automations such as heating, cooling, and ventilation. Most are battery powered and use low-power wireless protocols such as Zigbee, Z-Wave, or bluetooth to reduce battery consumption. Most also include a humidity sensors as well. Some also come with screens for quick viewing of the current temperature and humidity, although this naturally decreases battery life.
+devices:
+  - name: Sonoff SNZB-02
+    description: A simple zigbee temperature. Compatible with Z2M and ZHA.
+    battery: CR2032
+    price: $8.49
+    url: https://itead.cc/product/sonoff-snzb-02-zigbee-temperature-and-humidity-sensor/
+    protocol: Zigbee
+    image: sonoff-snzb-02.png
+    users: 1
+
+  - name: Xiaomi Mijia LYWSD03MMC
+    description: Comes with a screen as well. By default these sensors are bluetooth and can be used with an [esphome bluetooth proxy](https://esphome.io/components/bluetooth_proxy.html), but the chip also includes a zigbee radio. Some recent development has led to an easily flashed [zigbee firmware](https://smarthomescene.com/guides/convert-xiaomi-lywsd03mmc-from-bluetooth-to-zigbee/) for these sensors that is compatible with both Z2M and ZHA(NOTE There's a zigbee firmware by devbis and pvvx - the pvvx version has much better battery life).
+    battery: CR2032
+    price: $4.37
+    url: https://www.aliexpress.us/item/3256805092369363.html
+    protocol: [Bluetooth, Zigbee]
+    image: lywsd03mmc.png
+    users: 1
